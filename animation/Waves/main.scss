@@ -26,8 +26,19 @@ body{
   }
 }
 
-.section{
+.footer{
 
+  a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+
+    &:hover{
+      color: var(--color-1);
+    }
+  }
 }
 
 // waves
@@ -40,6 +51,11 @@ body{
   margin-bottom: -7px;
   min-height:100px;
   max-height:150px;
+
+  @media (max-width: 768px) {
+    height: 40px;
+    min-height: 40px;
+  }
 }
 
 .parallax > use {

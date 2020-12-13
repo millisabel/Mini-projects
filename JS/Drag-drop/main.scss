@@ -6,7 +6,7 @@ body{
   margin: 0;
   min-height: 100vh;
 
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(86, 123, 255, 0.4), rgba(86, 123, 255, 0.2));
+  background: linear-gradient(to top, rgb(55, 11, 132), rgba(30, 30, 30, 0.2), rgba(255, 255, 255, 1));
 }
 
 img{
@@ -15,30 +15,31 @@ img{
 }
 
 .box{
-  padding: 60px 50px 0;
+  padding: 40px 0 0;
   max-width: 500px;
   margin: 0 auto;
 }
 
 .tree{
+  position: relative;
 
-  outline: 1px solid;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(30, 30, 30, 0.2), rgb(55, 11, 132));
 }
 
 .balls{
   position: relative;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
   width: 100%;
 
   &__item{
-    position: absolute;
-    //bottom: 0;
-
-    width: 50px;
-    height: 50px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
 
     background-size: cover;
-
-    outline: 1px solid;
   }
 }

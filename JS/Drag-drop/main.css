@@ -1,38 +1,34 @@
 *, *::after, *::before {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(86, 123, 255, 0.4), rgba(86, 123, 255, 0.2));
-}
+  background: linear-gradient(to top, #370b84, rgba(30, 30, 30, 0.2), white); }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .box {
-  padding: 60px 50px 0;
+  padding: 40px 0 0;
   max-width: 500px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .tree {
-  outline: 1px solid;
-}
+  position: relative;
+  background: linear-gradient(to top, white, rgba(30, 30, 30, 0.2), #370b84); }
 
 .balls {
   position: relative;
-  width: 100%;
-}
-.balls__item {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  outline: 1px solid;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%; }
+  .balls__item {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

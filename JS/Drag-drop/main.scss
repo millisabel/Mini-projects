@@ -1,0 +1,44 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(86, 123, 255, 0.4), rgba(86, 123, 255, 0.2));
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.box{
+  padding: 60px 50px 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tree{
+
+  outline: 1px solid;
+}
+
+.balls{
+  position: relative;
+
+  width: 100%;
+
+  &__item{
+    position: absolute;
+    //bottom: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background-size: cover;
+
+    outline: 1px solid;
+  }
+}

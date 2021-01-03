@@ -15,28 +15,26 @@ img{
 }
 
 .box{
-  padding: 40px 0 0;
+  padding: 60px 50px 0;
   max-width: 500px;
   margin: 0 auto;
 }
 
 .tree{
-  position: relative;
-
   background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(30, 30, 30, 0.2), rgb(55, 11, 132));
 }
 
 .balls{
   position: relative;
 
-  display: flex;
+  display:  flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 
   width: 100%;
 
   &__item{
-    min-width: 30px;
     width: 30px;
     height: 30px;
 
